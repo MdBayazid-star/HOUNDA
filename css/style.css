@@ -14,6 +14,22 @@
     --text-lightGray: #7E848C;
     --text-deepGray: #383838;
 }
+*::selection {
+    background: var(--text-orange);
+    color: var(--text-white);
+}
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--text-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-orange);
+    border-radius: 10px;
+}
 header {
     width: 100% !important;
     background: var(--bg-naviblue);
@@ -101,7 +117,7 @@ hr.section__hr {
     letter-spacing: 0.2px;
     color: var(--text-gray);
     line-height: 26px;
-    padding:0 45px ;
+    padding:0 20px ;
 }
 .text__blue {
     font-weight: 600;
@@ -156,6 +172,46 @@ hr.section__hr {
 .img__card-item {
     width: 300px !important;
     height: 220px !important;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
+.slider__img {
+    width: 100%;
+    height: 650px !important;
+    object-fit: cover;
+}
+.slider__text {
+    color: var(--text-orange);
+    background: #FFF;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/* Footer start  */
+footer{
+    background: rgba(0,0,0,0.81);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+footer p>a{
+    color: var(--text-orange);
+}
+footer input{
+    border: none !important;
+}
+footer input::placeholder{
+    color: white !important;
+}
+footer .input-group .input-group-text{
+    background: var(--text-orange);
+    padding: 10px 15px;
+    border: none;
+}
+footer .column i{
+    color: var(--text-orange);
+}
+footer .column i+i{
+    padding: 0 0.5em;
+}
+/* Footer end */

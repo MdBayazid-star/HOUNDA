@@ -1,9 +1,9 @@
+/*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-    font-family: 'Poppins', sans-serif;
-}
+/*==================== VARIABLES CSS ====================*/
 :root {
     --bg-orange: #E76F51;
+    --bg-lightOrange: #ff9175c9;
     --bg-naviblue: #264653;
 
     --text-white: #FFFFFF;
@@ -14,6 +14,10 @@
     --text-lightGray: #7E848C;
     --text-deepGray: #383838;
 }
+/*==================== BASE ====================*/
+* {
+    font-family: 'Poppins', sans-serif;
+}
 *::selection {
     background: var(--text-orange);
     color: var(--text-white);
@@ -21,15 +25,39 @@
 ::-webkit-scrollbar {
     width: 9px;
 }
-
 ::-webkit-scrollbar-track {
     background: var(--text-white);
 }
-
 ::-webkit-scrollbar-thumb {
     background: var(--text-orange);
     border-radius: 10px;
 }
+/*==================== Button ====================*/
+a.bike__btn {
+    background: var(--bg-orange) !important;
+    border-radius: 5px !important;
+    padding: .8rem 1.8rem !important;
+    color: var(--text-white) !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+a.bike__btn:hover {
+    color: var(--text-white);
+}
+a.bike__btn2 {
+    border: 3px solid var(--text-orange);
+    border-radius: 5px !important;
+    padding: .6rem 1.8rem !important;
+    color: var(--text-orange) !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+    font-weight: 600;
+}
+/*==================== HEADER ====================*/
 header {
     width: 100% !important;
     background: var(--bg-naviblue);
@@ -44,31 +72,7 @@ header {
     font-size: 48px;
     color: var(--text-white);
 }
-a.bike__btn {
-    background: var(--bg-orange) !important;
-    border-radius: 5px !important;
-    padding: .8rem 1.8rem !important;
-    color: var(--text-white) !important;
-    -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    -ms-border-radius: 5px !important;
-    -o-border-radius: 5px !important;
-}
-a.bike__btn:hover {
-    color: var(--text-white);
-}
-
-a.bike__btn2 {
-    border: 3px solid var(--text-orange);
-    border-radius: 5px !important;
-    padding: .8rem 1.8rem !important;
-    color: var(--text-orange) !important;
-    -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    -ms-border-radius: 5px !important;
-    -o-border-radius: 5px !important;
-    font-weight: 600;
-}
+/*==================== SECTION DESING ====================*/
 .sections__heading {
     text-align: center;
 }
@@ -85,20 +89,8 @@ h6.sections__subtitle {
 hr.section__hr {
     width: 59px;
     margin: 0 auto;
-    border: 1px solid #E76F51;
+    border: 1px solid var(--bg-orange);
     border-radius: 1px;
-}
-.fetured__img {
-    width: 288px !important;
-    height: 243px !important;
-}
-.card__img {
-    width: 149px !important;
-    height: 149px !important;
-}
-.grayScale {
-    filter: grayscale(100);
-    -webkit-filter: grayscale(100);
 }
 .section__title {
     font-weight: 600;
@@ -110,6 +102,19 @@ hr.section__hr {
 }
 .section__title span:last-child {
     color: var(--text-orange);
+}
+/*==================== FETURED ====================*/
+.fetured__img {
+    width: 288px !important;
+    height: 243px !important;
+}
+.card__img {
+    width: 149px !important;
+    height: 149px !important;
+}
+.grayScale {
+    filter: grayscale(100);
+    -webkit-filter: grayscale(100);
 }
 .card__pra {
     font-size: 16px;
@@ -138,6 +143,10 @@ hr.section__hr {
     -webkit-font-feature-settings: 'tnum'on,'lnum'on;
     -moz-font-feature-settings: 'tnum'on,'lnum'on;
 }
+.img__border{
+    border: 2px solid #6C6C6C !important;
+}
+/* accordion text */
 .accordion__text {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -150,19 +159,34 @@ hr.section__hr {
 }
 .bg__none {
     background: none !important;
-    border-bottom: 0 !important;
+    border: 3px solid var(--bg-orange) !important;
+}
+.bg__none:focus {
+    border: 0;
+}
+.bg__style {
+    background: var(--bg-lightOrange);
+    color: var(--text-white);
+    border-left: 1px solid var(--bg-orange);
+    border-right: 1px solid var(--bg-orange);
+}
+.accordion__icon-color {
+    color: var(--text-orange) !important;
 }
 .img__sizing {
     width: 260px !important;
     height: 120px !important;
     cursor: pointer;
 }
+.img__sizing:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
 .img-size {
     width: 240px !important;
     height: 100px !important;
 }
 .bg__cards {
-    background: var(--text-orange);
+    background: var(--bg-lightOrange);
 }
 .text__desing {
     color: var(--text-deepGray);
@@ -174,6 +198,7 @@ hr.section__hr {
     height: 220px !important;
     object-fit: cover;  
 }
+/*==================== SLIDER ====================*/
 .slider__img {
     width: 100%;
     height: 650px !important;
@@ -187,6 +212,15 @@ hr.section__hr {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+.slider__icon i {
+    color: var(--text-orange) !important;
+    font-weight: 600 !important;
+    font-size: 35px !important;
+}
+/* Know More To Choose Better */
+.text__white-color {
+    color: var(--text-white) !important;
 }
 /* Footer start  */
 footer{
@@ -207,11 +241,17 @@ footer .input-group .input-group-text{
     background: var(--text-orange);
     padding: 10px 15px;
     border: none;
+    cursor: pointer;
 }
 footer .column i{
     color: var(--text-orange);
+    cursor: pointer;
 }
 footer .column i+i{
     padding: 0 0.5em;
+    cursor: pointer;
+}
+.footer__text a:hover {
+    color: var(--text-orange);
 }
 /* Footer end */
